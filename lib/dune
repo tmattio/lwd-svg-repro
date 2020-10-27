@@ -1,0 +1,8 @@
+(library
+ (name demo)
+ (public_name demo)
+ (libraries js_of_ocaml lwd tyxml-lwd)
+ (preprocess
+  (pps js_of_ocaml-ppx)))
+
+(include_subdirs unqualified)
